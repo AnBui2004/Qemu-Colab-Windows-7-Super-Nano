@@ -4,7 +4,7 @@ sudo apt install qemu-system-x86-xen -y
 sudo apt install qemu-system-x86 -y
 qemu-img create -f raw windows7nano.img 64G
 wget -O RTL8139F.iso 'https://drive.google.com/uc?export=download&id=1wDL8vo9mmYKw1HKXZzaYHoKmzSt_wXai'
-wget -O windows7_super-nano_lite.iso 'https://drive.google.com/uc?export=download&id=1y5BYrgdUIV_6D5OoILUAfvYQJMGUlPmp'
+wget -O windows7_super-nano_lite.iso 'https://archive.org/download/windows-7x-86-supernano-final/Windows7_super-nano_lite.iso'
 
 curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
 sudo qemu-system-x86_64 \
