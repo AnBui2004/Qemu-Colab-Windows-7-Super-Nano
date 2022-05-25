@@ -3,8 +3,8 @@ sudo apt install qemu-utils -y
 sudo apt install qemu-system-x86-xen -y
 sudo apt install qemu-system-x86 -y
 qemu-img create -f raw windows7nano.img 64G
-wget -O RTL8139F.iso 'https://www.dropbox.com/s/v1yyj5i1ao3rtq3/RTL8139F.iso?dl=1'
-wget -O windows7_super-nano_lite.iso 'https://www.dropbox.com/s/ic413pf6x8eheu6/windows7_super-nano_lite.iso?dl=1'
+wget -O RTL8139F.iso 'https://zoydyw.bn.files.1drv.com/y4mQQI3UjoImJ_tKf4sMyOzxK84q-gSggnjanUix8yyKEm8i8o7olu8_Pa0ErbpE_U29DvLyMiuvRx1zWAxdbWlGQP11_hQdTYuXnRZjq8O29Jx_OeVvvn_TneuwXREVJRGF5vxmGRP6OMHcaHu1MM8_PURTgIRd_9IQnOudymE5us0rK6zKa6bz6Q2O35QnV_ItSajaGUvu_sCu2OBIAKsbw'
+wget -O windows7_super-nano_lite.iso 'https://public.bn.files.1drv.com/y4mZSTmk4pxo3ORhs9ylIrfpybqXQmBbes_iJTYMnoOyeboLbp2EAdxtkj-vrtK0wf-ktjo4ryP89VvaP8bjCNPIUVmU7sI_v4QelwO1_bqwyOnv3PCDUoowLN_DC0TfA8ZbgvXMtTHWu43GrEkYDIVVHJPFpWYquooix3e8R9Ygy3iUSOLhbGaalyi6tF2Drb_3x_j3fsg_xyXFkQ-FC3uAyztxYsqbjY7uifAiFSuCGw'
 
 curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
 sudo qemu-system-x86_64 \
